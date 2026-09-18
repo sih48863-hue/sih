@@ -2,7 +2,7 @@ import os
 import time
 import requests
 
-TOKEN = "8641775796:AAHq0xrHboZwHpdUnQ2BgQsjhgq1hmX_P7Y"
+TOKEN = os.getenv("TELEGRAM_BOT_TOKEN", "")
 WEBHOOK_URL = "http://localhost:8000/api/v1/telegram/webhook"
 API_URL = f"https://api.telegram.org/bot{TOKEN}"
 
